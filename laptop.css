@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+      "header header"
+      "main sidebar"
+      "main footer"; /* main ocupa 2 filas verticalmente */
+    grid-template-columns: 2fr 1fr; /* sidebar más estrecho */
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .header, .sidebar, .extra, .footer, .main {
+    background: #ddd;
+    padding: 20px;
+    text-align: center; 
+  }
+  
+  .header { grid-area: header; }
+  .main { grid-area: main; }
+  .sidebar { grid-area: sidebar; }
+  .footer { grid-area: footer; }
+  
