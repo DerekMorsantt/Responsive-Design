@@ -1,26 +1,26 @@
 .pantalla {
     width: 100%;
     height: 100vh;
-
+  background-color: pink;
    
 }
 
 /* Pantallas HD (laptops y monitores medianos) */
 @media (min-width: 1024px) and (max-width: 1919px) {
     .pantalla {
-       
+       background-color: red;
     }
   }
 
   /* Tabletas */
 @media (min-width: 768px) and (max-width: 1023px) {
     .pantalla {
-        
+     background-color: blue;   
     }
   }
   /* Teléfonos */
 @media (max-width: 767px) {
     .pantalla {
-        
+        background-color: green;
     }
   }
